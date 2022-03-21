@@ -599,6 +599,22 @@ header
   .header-area .main-nav .logo {
     color: #1e1e1e;
   }
+  footer{
+    padding: 20px 0px !important;
+  }
+  #reservation {
+    margin-top: 50px !important;
+  }
+  #chefs{
+    padding-top: 60px !important;
+  }
+  #about
+  {
+    padding-top: 35px !important;
+  }
+  #about .right-content .thumb{
+    left: 0 !important;
+  }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
     color: #fb5849 !important;
@@ -617,8 +633,8 @@ header
   .header-area .container {
     padding: 0px;
   }
-  .header-area .logo {
-    /* margin-left: 30px; */
+  .slick-list{
+    height: 310px !important;
   }
   .map{
     padding-left: 0px !important;
