@@ -596,6 +596,10 @@ header
 }
 
 @media (max-width: 767px) {
+  .background-header .logoW
+  {
+    margin-top:5px !important;
+  }
   .header-area .main-nav .logo {
     margin-left: -2px !important;
   }
@@ -624,7 +628,6 @@ header
     width: 100%;
   }
   .header-area {
-    background-color: #f7f7f7;
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
@@ -640,9 +643,8 @@ header
     padding-left: 0px !important;
   }
   .logoW {
-    width: 65px !important;
-    margin-top: 18px !important;
-    height: 61px !important;
+    width: 252px !important;
+     margin-top: 12px !important;
   }
   .logoText{
     letter-spacing: initial;
