@@ -162,9 +162,10 @@ ul {
 }
 
 p {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 25px;
   color: #2a2a2a;
+  text-align: justify;
 }
 
 /* 
@@ -560,10 +561,9 @@ header
 .background-header .main-nav .menu-trigger.active span:before {
   background-color: #1e1e1e;
 }
-.background-header .logoW
-  {
-    width: 265px !important;
-  }
+.background-header .logoW {
+  width: 265px !important;
+}
 .header-area .main-nav .menu-trigger.active span:after {
   -moz-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
@@ -587,7 +587,124 @@ header
 .header-area.header-sticky .nav li a.active {
   color: #fb5849;
 }
-
+.home-categorie-main {
+  float: left;
+  width: 100%;
+  margin-bottom: 90px;
+}
+.home-categorie-main ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-bottom: solid 1px #d9e2e5;
+  padding-bottom: 40px;
+}
+.home-categorie-main ul li {
+  width: 225px;
+  float: left;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+.home-categorie-main .column {
+  float: left;
+  width: 100%;
+  position: relative;
+  transition: ease-in 0.2s;
+}
+.home-categorie-main .column:before {
+  content: "";
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px;
+  box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 10%);
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+}
+.home-categorie-images {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.home-categorie-images figure {
+  width: 120px;
+  margin: auto;
+  border-radius: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 10%);
+  background: #fff;
+  border: solid 1px transparent;
+}
+.home-categorie-images figure img {
+  width: auto;
+  height: 60px;
+}
+.home-categorie-images figure.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  transition: ease-in .2s;
+  border-color: #e97e26;
+  box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 2%);
+}
+.home-categorie-images figure {
+  width: 120px;
+  margin: auto;
+  border-radius: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 10%);
+  background: #fff;
+  border: solid 1px transparent;
+}
+.home-categorie-images figure.hover a {
+  position: static;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in .2s;
+  border-color: #e97e26;
+  box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 2%);
+  text-align: center;
+}
+.home-categorie-name {
+  float: left;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.home-categorie-name {
+  text-align: center;
+  font-size: 16px;
+  color: #181818;
+  transition: ease-in .2s;
+}
+.home-categorie-name a {
+  color: #181818;
+}
+.home-categorie-main .column:hover figure.hover {
+  opacity: 1;
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1370px;
+  }
+}
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
     padding-left: 12px;
@@ -599,27 +716,28 @@ header
 }
 
 @media (max-width: 767px) {
-  .background-header .logoW
-  {
-    margin-top:5px !important;
+  .background-header .logoW {
+    margin-top: 5px !important;
+  }
+  #service {
+    margin-top: 30px;
   }
   .header-area .main-nav .logo {
     margin-left: -2px !important;
   }
-  footer{
+  footer {
     padding: 20px 0px !important;
   }
   #reservation {
-    margin-top: 50px !important;
+    margin-top: 2026px !important;
   }
-  #chefs{
+  #chefs {
     padding-top: 60px !important;
   }
-  #about
-  {
+  #about {
     padding-top: 35px !important;
   }
-  #about .right-content .thumb{
+  #about .right-content .thumb {
     left: 0 !important;
   }
   .header-area.header-sticky .nav li a:hover,
@@ -639,17 +757,18 @@ header
   .header-area .container {
     padding: 0px;
   }
-  .slick-list{
+  .slick-list {
     height: 310px !important;
   }
-  .map{
+  .map {
     padding-left: 0px !important;
+    margin-top: 15px;
   }
   .logoW {
     width: 252px !important;
-     margin-top: 12px !important;
+    margin-top: 12px !important;
   }
-  .logoText{
+  .logoText {
     letter-spacing: initial;
     font-size: unset;
     margin-left: 14px !important;
@@ -1019,7 +1138,8 @@ about
 }
 
 #about .right-content {
-  margin-left: 30px;
+  /* margin-left: 30px; */
+  margin-top: 145px;
 }
 
 #about .right-content .thumb {
@@ -1202,7 +1322,6 @@ menu
   content: "\f105";
 }
 
-
 /* 
 ---------------------------------------------
 reservation
@@ -1232,7 +1351,7 @@ reservation
 }
 
 #reservation {
-  margin-top: 120px;
+  margin-top: 508px;
   padding: 120px 0px;
   background-image: url(../images/reservation-bg.jpg);
   background-position: center center;
