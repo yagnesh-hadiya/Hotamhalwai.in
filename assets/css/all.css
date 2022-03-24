@@ -562,7 +562,24 @@ header
   background-color: #1e1e1e;
 }
 .background-header .logoW {
-  width: 265px !important;
+  width: 88px !important;
+}
+.background-header .logoTitle {
+  font-size: 22px;
+  font-weight: inherit;
+  font-family: cursive;
+  margin-left: 18px;
+}
+.logoW {
+  width: 103px !important;
+  margin-top: 4px !important;
+}
+.logoTitle {
+  font-size: 22px;
+  font-weight: inherit;
+  font-family: cursive;
+  margin-left: 18px;
+  color: #fb5849;
 }
 .header-area .main-nav .menu-trigger.active span:after {
   -moz-transform: translateY(-6px) translateX(1px) rotate(-45deg);
@@ -654,7 +671,7 @@ header
   right: 0;
   margin: auto;
   opacity: 0;
-  transition: ease-in .2s;
+  transition: ease-in 0.2s;
   border-color: #e97e26;
   box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 2%);
 }
@@ -678,7 +695,7 @@ header
   opacity: 1;
   align-items: center;
   justify-content: center;
-  transition: ease-in .2s;
+  transition: ease-in 0.2s;
   border-color: #e97e26;
   box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 2%);
   text-align: center;
@@ -692,7 +709,7 @@ header
   text-align: center;
   font-size: 16px;
   color: #181818;
-  transition: ease-in .2s;
+  transition: ease-in 0.2s;
 }
 .home-categorie-name a {
   color: #181818;
@@ -717,7 +734,37 @@ header
 
 @media (max-width: 767px) {
   .background-header .logoW {
-    margin-top: 5px !important;
+    margin-top: 8px !important;
+    width: 72px !important;
+  }
+  .ml {
+    margin-left: -10px;
+  }
+  .footerLogo {
+    display: none;
+  }
+  .background-header .logoTitle {
+    font-size: 14px;
+    font-weight: inherit;
+    font-family: cursive;
+    margin-left: 0px;
+    width: 200px;
+    text-align: center;
+    line-height: 21px;
+  }
+  .logoW {
+    margin-top: 13px !important;
+    width: 82px !important;
+  }
+  .logoTitle {
+    font-size: 15px;
+    font-weight: inherit;
+    font-family: cursive;
+    margin-left: -2px;
+    width: 200px;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 9px;
   }
   #service {
     margin-top: 30px;
@@ -764,17 +811,10 @@ header
     padding-left: 0px !important;
     margin-top: 15px;
   }
-  .logoW {
-    width: 252px !important;
-    margin-top: 12px !important;
-  }
-  .logoText {
-    letter-spacing: initial;
-    font-size: unset;
-    margin-left: 14px !important;
-  }
+
   .header-area .menu-trigger {
     display: block !important;
+    right: -5px !important;
   }
   .header-area .main-nav {
     overflow: hidden;
